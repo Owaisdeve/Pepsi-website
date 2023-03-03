@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepsi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="sec"> 
+    <header>
+      <a href="https://www.pepsi.com/"target="_blank"><img src="logo.png" class="logo" alt="logo-here"></a>
+      <ul>
+        <li><a href="https://www.pepsi.com/" target="_blank">Home</a></li>
+        <li><a href="https://www.pepsi.com/" target="_blank">Products</a></li>
+        <li><a href="https://www.pepsi.com/#!" target="_blank">What's New</a></li>
+        <li><a href="https://p.pepsi.com/signup" target="_blank">Newsletter</a></li>
+        <li><a href="https://contact.pepsico.com/pepsi" target="_blank">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Try it to <br><span>Belive It</span></h2>
+        <p>Pepsi was first invented in 1893 as "Brad's Drink" by Caleb Bradham, who sold the drink at his drugstore in New Bern, North Carolina. 
+            It was renamed Pepsi-Cola in 1898, "Pepsi" because it was advertised to relieve dyspepsia indigestion and "Cola" referring to the cola flavor.Some have also suggested that "Pepsi" may have been a reference to the drink aiding digestion like the digestive enzyme pepsin, but pepsin itself was never used as an ingredient to Pepsi-Cola. 
+        </p>
+        <a href="https://www.pepsi.com/#!products" target="_blank">View All Products</a>
+      </div>
+      <div class="imgBox">
+        <img src="pepsi001.png" class="pepsi">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be')"></li>
+      <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c')"></li>
+      <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/pepsi" target="_blank"><img src="facebook.png"></a></li>
+      <li><a href="https://twitter.com/pepsi" target="_blank"><img src="twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/pepsi/" target="_blank"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgColor(color){
+      const sec = document.querySelector('.sec');
+      sec.style.background = color;
+    }
+  </script>
+</body>
+</html>
